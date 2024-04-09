@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction - User Feedback</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1><a href="/" id="heading"> Stock Price Prediction </a></h1>
+    </header>
+
+    <main>
+        <section id="user-feedback">
+            <h2>User Feedback</h2>
+            <form id="feedback-form">
+                <label for="prediction-accuracy">Prediction Accuracy:</label>
+                <input type="number" id="prediction-accuracy" name="prediction-accuracy" min="0" max="100" required>
+
+                <label for="usability-rating">Usability Rating:</label>
+                <select id="usability-rating" name="usability-rating" required>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+
+                <label for="feedback-comments">Comments:</label>
+                <textarea id="feedback-comments" name="feedback-comments" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Stock Price Prediction</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
+

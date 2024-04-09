@@ -1,0 +1,88 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="{{ url_for('static', filename='script.js') }}"></script> -->
+</head>
+
+<body>
+    <header>
+        <h1><a href="/" id="heading"> Stock Price Prediction </a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="\dataSources.html">Data Sources</a></li>
+            <li><a href="\documentation.html">Documentation</a></li>
+            <li><a href="\securityMeasures.html">Security Measures</a></li>
+            <li><a href="\userFeedback.html">User Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="user-input">
+            <h2>Stock Information</h2>
+            <form action="/predict" method="POST" id="prediction-form">
+                <label for="ticker-symbol">Stock Ticker Symbol:</label>
+                <input type="text" id="ticker-symbol" name="ticker-symbol" required>
+
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date" required>
+
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date" required>
+
+                
+                <button type="submit">Predict</button>
+            </form>
+        </section>
+
+        <section id="graph-visualization">
+            <h2>Stock Price Trend</h2>
+            <div id="line-graph">
+                <!-- <img src="data:image/png;base64,{{ lineGraph }}" alt="Line Graph"> -->
+            </div>
+            <div id="bar-graph">
+                <!-- <img src="data:image/png;base64,{{ barGraph }}" alt="Bar Graph"> -->
+            </div>
+            <div id="scatter-graph">
+                <!-- <img src="data:image/png;base64,{{ scatterGraph }}" alt="Scatter Plot"> -->
+            </div>
+        </section>
+        
+
+        
+        <footer>
+            <p>&copy; 2022 Stock Price Prediction</p>
+        </footer>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        
+    </body>
+    
+    </html>
+    
+    <!-- <section id="additional-information">
+        <h2>Additional Information</h2>
+        <div id="stock-info"></div>
+    </section>
+</main> -->
+<!-- <section id="graph-visualization">
+    <h2>Stock Price Trend</h2>
+    <div id="stock-graph"></div>
+    <p id="prediction-accuracy">Prediction Accuracy: {{ accuracy }}%</p>
+    </section> -->
+
+    <!-- <label for="prediction-model">Prediction Model:</label>
+    <select id="prediction-model" name="prediction-model" required>
+        <option value="machine-learning">Machine Learning</option>
+        <option value="deep-learning">Deep Learning</option>
+    </select> -->

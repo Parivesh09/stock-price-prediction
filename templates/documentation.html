@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction Documentation</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="/" id="heading"> Stock Price Prediction </a></h1>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                Welcome to the documentation for the Stock Price Prediction web application. This document provides an
+                overview of the application's features, usage instructions, and technical details.
+            </p>
+        </section>
+
+        <section id="user-interface">
+            <h2>User Interface</h2>
+            <p>
+                The user interface of the Stock Price Prediction application is designed to be intuitive and
+                user-friendly. It consists of the following input fields:
+            </p>
+            <ul>
+                <li>Stock Ticker Symbol: Allows users to enter the stock's ticker symbol (e.g., AAPL for Apple Inc.).</li>
+                <li>Start Date: Lets users specify the starting date for the prediction.</li>
+                <li>End Date: Allows users to select the date until which they want to predict the stock price.</li>
+                <li>Prediction Model: Implements a machine learning or deep learning model capable of predicting future
+                    stock prices based on historical data.</li>
+            </ul>
+            <p>
+                Users can input the required information and click the "Predict" button to generate stock price
+                predictions.
+            </p>
+        </section>
+
+        <section id="graph-visualization">
+            <h2>Graph Visualization</h2>
+            <p>
+                The Stock Price Prediction application generates an interactive graph that displays the historical stock
+                price data up to the current date and the predicted stock prices from the current date to the user-specified
+                end date. The graph is visually appealing and easy to interpret.
+            </p>
+        </section>
+
+        <section id="prediction-accuracy">
+            <h2>Prediction Accuracy</h2>
+            <p>
+                The application displays the accuracy of the prediction model and provides a confidence interval for the
+                predicted prices. This information helps users assess the reliability of the predictions.
+            </p>
+        </section>
+
+        <section id="additional-information">
+            <h2>Additional Information</h2>
+            <p>
+                The Stock Price Prediction application also provides additional information about the selected stock,
+                including its current price, company profile, and recent news related to the stock. This information helps
+                users make more informed investment decisions.
+            </p>
+        </section>
+
+        <section id="data-source">
+            <h2>Data Source</h2>
+            <p>
+                The application retrieves historical stock price data and relevant news sentiment data from reputable
+                sources such as Yahoo Finance or Alpha Vantage. This ensures the accuracy and reliability of the data used
+                for predictions.
+            </p>
+        </section>
+
+        <section id="security">
+            <h2>Security</h2>
+            <p>
+                The Stock Price Prediction application implements security measures to protect user data and ensure the
+                safety of financial information. These measures include encryption, secure data storage, and user
+                authentication.
+            </p>
+        </section>
+
+        <section id="deployment">
+            <h2>Deployment</h2>
+            <p>
+                The Stock Price Prediction application is deployed on a web server and accessible through a user-friendly
+                URL. This allows users to access the application from any device with an internet connection.
+            </p>
+        </section>
+
+        <section id="documentation">
+            <h2>Documentation</h2>
+            <p>
+                The documentation for the Stock Price Prediction application provides clear instructions on how to use the
+                application and interpret the predictions. It covers topics such as input requirements, graph
+                interpretation, and prediction accuracy assessment.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Stock Price Prediction</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
+

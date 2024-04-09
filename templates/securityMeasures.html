@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction - Security Measures</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1><a href="/" id="heading">Stock Price Prediction - Security Measures</a></h1>
+    </header>
+
+    <main>
+        <section id="security-measures">
+            <h2>Security Measures</h2>
+            <p>
+                The Stock Price Prediction website takes the following security measures to protect user data and ensure the safety of financial information:
+            </p>
+            <ul>
+                <li>
+                    <strong>Secure Socket Layer (SSL) Encryption:</strong> All communication between the user's browser and the website is encrypted using SSL, ensuring that sensitive data is transmitted securely.
+                </li>
+                <li>
+                    <strong>User Authentication:</strong> Users are required to create an account and log in before accessing the prediction features. This helps prevent unauthorized access to user data.
+                </li>
+                <li>
+                    <strong>Data Encryption:</strong> User data, including stock ticker symbols and prediction dates, is encrypted before being stored in the database. This adds an extra layer of protection to user information.
+                </li>
+                <li>
+                    <strong>Input Validation:</strong> The website performs input validation to prevent malicious code injection and protect against common web vulnerabilities, such as cross-site scripting (XSS) and SQL injection attacks.
+                </li>
+                <li>
+                    <strong>Regular Security Audits:</strong> The website undergoes regular security audits to identify and address any potential vulnerabilities. This helps ensure that the website remains secure and up-to-date with the latest security practices.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Stock Price Prediction</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
