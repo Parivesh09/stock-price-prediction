@@ -1,0 +1,267 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+#heading{
+    color: #f5f5f5; /* Set the color for h1 */
+    font-size: 50px;
+    text-decoration: none;
+}
+h2 {
+    color: #333;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+}
+
+/* User Input Section */
+
+#user-input {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Graph Visualization Section */
+
+#graph-visualization {
+    margin-bottom: 20px;
+}
+
+#stock-graph {
+    height: 400px;
+}
+
+#prediction-accuracy {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Additional Information Section */
+
+#additional-information {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Custom Styles for Specific Sections */
+
+/* Reset some default styles and set a base font size */
+html, body, h1, h2, h3, p, label, input, select, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 16px; */
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header section with a background color, centered text, and padding */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content area with some spacing and a maximum width */
+main {
+    margin: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the user input section */
+#user-input {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Style form labels and inputs with some spacing */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the graph visualization section */
+#graph-visualization {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Custom styles for the graph area can be added here. */
+
+/* Style the Plotly graph */
+.plotly-graph-div {
+    background-color: #fff; /* Background color for the graph */
+    border: 1px solid #ccc; /* Border for the graph */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Add any other specific styles for the Plotly graph here */
+}
+
+/* Style the axes and grid lines of the Plotly graph */
+.plotly-graph-div .xaxis,
+.plotly-graph-div .yaxis {
+    /* Add styles for the axes and grid lines */
+    color: #333; /* Axis and grid line color */
+}
+
+/* Style the legend of the Plotly graph */
+.plotly-graph-div .legend {
+    /* Add styles for the legend */
+    font-weight: bold;
+    font-size: 14px;
+    color: #333; /* Legend text color */
+}
+
+
+#prediction-accuracy {
+    font-weight: bold;
+}
+
+/* Style the additional information section */
+#additional-information {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Custom styles for the additional information section can be added here. */
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    main {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+/* Style the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the list items in the navigation bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px; /* Adjust the spacing between menu items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
